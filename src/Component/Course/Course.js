@@ -3,26 +3,28 @@ import fakeData from '../../fakeData/fakeData.json';
 import { useState } from 'react';
 import './course.css';
 import CourseData from '../../CourseData/CourseData';
+import EnrollCart from '../EnrollCart/EnrollCart';
 
 
 const Course = () => {
     const [course, setCourse] = useState(fakeData);
-    const [click, setClick] = useState([]);
+    const [Enroll, setEnroll] = useState([]);
     const HandleBtn = (course) => {
-        const newClick = [...click, course]
-        setClick(newClick);
+        const newEnroll = [...Enroll, course]
+        setEnroll(newEnroll);
     }
     return (
         <div className="courseArea">
 
             <div className="courseSection">
+                <h1 id="Courses" >Our Special Courses ~</h1>
                 {
                     course.map(course => <CourseData HandleBtn={HandleBtn} course={course}></CourseData> )
                 }
             </div>
             
             <div className="EnrollCourse">
-                this is cart
+                <EnrollCart Enroll={Enroll}></EnrollCart>
             </div>
 
         </div>
