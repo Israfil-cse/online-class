@@ -5,10 +5,10 @@ import Course from './Component/Course/Course';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <Course></Course>
-    </div>
+      <div className="App">
+        <Header></Header>
+        <Course></Course>
+      </div>
   );
 }
 
