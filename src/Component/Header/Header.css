@@ -1,42 +1,38 @@
-.logo{
-    height: 50px;
-}
-nav{
-    width: 100%;
-    line-height:40px;
-    background-color: black;
-    text-align: right;
-}
-nav a{
-    text-decoration: none;
-    font-size:16px;
-    color:white;
-    padding: 5px;
-    margin: 5px;
-}
-nav a:hover{
-    color:hotpink;
-}
-.search{
+.header{
     background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100% );
     color: #fff;
-    line-height: 50px;
+    line-height: 60px;
 }
-.search input{
+.header input{
     width: 50%;
-    margin-left: 300px;
+    margin-left: 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 8px 0px 0px 0px;
     padding: 7px 20px;
 }
 .searchBtn{
     background-image: linear-gradient(to bottom, #000 0%, #FF136F 100% );
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 0px 8px 0px 0px;
     padding: 7px 20px;
     cursor: pointer;
 }
+nav{
+    float: right;
+}
+nav a{
+    text-decoration: none;
+    font-size:18px;
+    color:white;
+    padding: 5px;
+    margin: 5px;
+}
+nav a:hover{
+    color:black;
+}
+
+
 figure{
     text-align:center;
 }

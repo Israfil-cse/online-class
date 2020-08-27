@@ -1,5 +1,7 @@
 import React from 'react';
 import './CourseData.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faFighterJet} from '@fortawesome/free-solid-svg-icons';
 
 const courseData = (props) => {
     const course = props.course;
@@ -13,7 +15,7 @@ const courseData = (props) => {
                 <h5>Trainer: {course.trainer}</h5>
                 <h5>Contact Us: {course.email}</h5>
                 <h5>Course Fee: {course.Coursefree} Tk</h5>
-                <button onClick={ () => props.HandleBtn(course)} className="enrollBtn">Enroll Now >></button>
+                <button onClick={ () => props.HandleBtn(course)} className="enrollBtn">Enroll Now <FontAwesomeIcon icon={faFighterJet} /></button>
             </div>
         </div>
     );

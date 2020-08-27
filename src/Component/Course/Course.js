@@ -14,20 +14,25 @@ const Course = () => {
         setEnroll(newEnroll);
     }
     return (
-        <div className="courseArea">
+        <div>
+            <div className="courseArea">
 
-            <div className="courseSection">
-                <h1 id="Courses" >Our Special Courses ~</h1>
-                {
-                    course.map(course => <CourseData HandleBtn={HandleBtn} course={course}></CourseData> )
-                }
-            </div>
-            
-            <div className="EnrollCourse">
-                <EnrollCart Enroll={Enroll}></EnrollCart>
-            </div>
+                <div className="courseSection">
+                    <h1 id="Courses" >Our Special Courses ~</h1>
+                    {
+                        course.map(course => <CourseData HandleBtn={HandleBtn} course={course}></CourseData>)
+                    }
+                </div>
 
-        </div>
+                <div className="EnrollCourse">
+                    <EnrollCart Enroll={Enroll}></EnrollCart>
+                </div>
+
+            </div>
+            <footer style={{padding: '10px', textAlign: 'center'}}>
+                All rights reserved. israfil Hossen cse
+            </footer>
+            </div>
     );
 };
 
