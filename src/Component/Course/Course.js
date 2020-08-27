@@ -2,7 +2,7 @@ import React from 'react';
 import fakeData from '../../fakeData/fakeData.json';
 import { useState } from 'react';
 import './course.css';
-import CourseData from '../../CourseData/CourseData';
+import CourseData from '../CourseData/CourseData'
 import EnrollCart from '../EnrollCart/EnrollCart';
 
 
@@ -30,7 +30,7 @@ const Course = () => {
 
             </div>
             <footer style={{padding: '10px', textAlign: 'center'}}>
-                All rights reserved. israfil Hossen cse
+                <h5>All rights reserved. israfil Hossen cse</h5>
             </footer>
             </div>
     );
